@@ -8,9 +8,31 @@ public class Address {
     private String zipCode;
     private String country = "USA";
 
+    //constructor - automatically called
+    //no return type
+    //save the same as
+    public Address() {
+        System.out.println("Address constructor");
+        street = "123 Main Street";
+        city = "Owings Mills";
+        state = "MD";
+        zipCode = "21145";
+    }
+    public Address(String street, String city, String state, String zipCode){
+        if (street.isEmpty() || street.length() > 50) {
+            System.out.println("ERROR: Invalid Street");
+        } else {
+            this.street = street;
+            this.zipCode = zipCode;
+            this.city = city;
+            this.state = state;
+        }
+
+    }
+
     @Override
     public String toString() {
-        return street + ", " + city + ", " + state + ", " + zipCode;
+        return street + ", " + city + ", " + state + " " + zipCode;
     }
 
     public String getStreet() {
