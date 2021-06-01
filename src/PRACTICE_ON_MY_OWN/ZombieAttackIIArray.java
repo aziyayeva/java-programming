@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class ZombieAttackIIArray {
     public static void main(String[] args) {
 
-                int[] population = {0, 7, 0, 2, 3, 7, 0, 2}; //Arrays.copyOf
+                int[] population = {5, 7, 0, 2, 3, 7, 0, 2}; //Arrays.copyOf
 
                 boolean done = true;
                 int day = 0;
